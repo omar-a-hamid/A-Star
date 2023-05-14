@@ -37,10 +37,21 @@ how do you pass start and end node
 for edge in edges
     
     edge.get_traffic()
+    
 
 
 """
+"""
+def get_Time
 
+   return  edge. length / edge.get_traffic()
+
+
+def get traffic(time, edge): 
+
+
+    return traffic_df[time, edge]
+"""
 
 # start the simulation and connect to it
 traci.start(["sumo", "-c", "osm.sumocfg"])
@@ -86,7 +97,7 @@ def a_star(start_node, goal_node):
 
             neighbor_node = net.getEdge(neighbor).getToNode()
             # traci.simulation.getEdgeTarget(neighbor)
-            tentative_g_score = g_score[current_node] + net.getEdge(neighbor).getLength()
+            tentative_g_score = g_score[current_node] + """ gettime """  net.getEdge(neighbor).getLength()
             
             if neighbor_node not in g_score or tentative_g_score < g_score[neighbor_node]:
                 neighbor_node = neighbor_node.getID()
@@ -106,3 +117,4 @@ print("Shortest path:", shortest_path)
 
 # stop the simulation
 traci.close()
+
