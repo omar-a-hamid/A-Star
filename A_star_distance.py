@@ -10,7 +10,16 @@ import traffic data, csv?
 
 csv --> 
     
-        edge, traffic, time
+                edge        E0        E2      E3        E4      E5      E6      E6      ...
+     
+        time     
+
+        12:00             60KM/Hr  60KM/Hr  60KM/Hr  60KM/Hr  60KM/Hr 
+        12:01             60KM/Hr  60KM/Hr  60KM/Hr  60KM/Hr  60KM/Hr
+        12:02             60KM/Hr  60KM/Hr  60KM/Hr  60KM/Hr  60KM/Hr
+          .
+          .
+          .
 
     current time
           if current time == time stamp 
@@ -28,10 +37,6 @@ how do you pass start and end node
 for edge in edges
     
     edge.get_traffic()
-
-
-
-
 
 
 """
