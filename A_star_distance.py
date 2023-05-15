@@ -2,7 +2,7 @@ import traci
 import sumolib
 
 import pandas as pd
-
+#TODO: bug some time it fetches the speed zero
 """
 TODO: 
 
